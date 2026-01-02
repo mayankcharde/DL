@@ -1,0 +1,115 @@
+🔹 What is a Perceptron?
+
+A Perceptron is the basic building block of neural networks and deep learning.
+It is a single artificial neuron that takes inputs, applies weights, adds a bias, and produces an output using an activation function.
+
+👉 Think of it as the simplest form of a neural network.
+
+
+
+	​
+
+🔹 Activation Function (Step Function)
+
+The classic perceptron uses a binary step function:
+
+Output = 1 → Positive class
+
+Output = 0 → Negative class
+
+This makes the perceptron suitable for binary classification.
+
+🔹 Working of Perceptron (Step-by-Step)
+
+Take input values
+
+Multiply inputs with weights
+
+Add bias
+
+Apply activation function
+
+Generate output
+
+
+
+
+
+
+
+▶️ Forward Propagation (Prediction)
+
+Input → weights → bias → activation
+
+Computes output / prediction
+
+Moves input → output
+
+No learning happens here
+
+
+
+
+◀️ Backward Propagation (Learning)
+
+Computes gradients of loss
+
+Uses chain rule
+
+Moves output → input
+
+Updates weights & bias
+
+🧠 Key Differences
+Forward	Backward
+Prediction	Learning
+Input → Output	Output → Input
+Uses weights	Updates weights
+
+
+
+
+One-Line Summary (Exam Ready)
+
+Forward propagation predicts output, backward propagation minimizes error by updating weights using gradients.
+
+
+
+
+
+🔹 What is Gradient Descent?
+
+Optimization algorithm used to minimize loss function
+
+Updates model parameters (weights & bias)
+
+Core learning method in Deep Learning
+
+🔹 Key Idea
+
+Move parameters in the opposite direction of gradient
+
+Gradient = slope of loss function
+
+🔹 Types (IMP)
+Type	Description
+Batch GD	Uses full dataset
+Stochastic GD (SGD)	Uses one sample
+Mini-batch GD	Uses small batch (most used)
+🔹 Learning Rate (η)
+
+Too small → slow learning
+
+Too large → divergence
+
+Proper value → fast convergence
+
+🔹 Role in Neural Networks
+
+Uses gradients from backpropagation
+
+Updates weights after each iteration/epoch
+
+⭐ One-Line Summary (Exam Ready)
+
+Gradient Descent minimizes loss by updating parameters in the direction opposite to the gradient.
